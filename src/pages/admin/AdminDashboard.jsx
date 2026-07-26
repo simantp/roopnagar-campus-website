@@ -1271,6 +1271,25 @@ export default function AdminDashboard() {
     }
   };
 
+  const handleExportDatabase = () => {
+    try {
+      const dataStr = JSON.stringify(data, null, 2);
+      const blob = new Blob([dataStr], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = `db_backup_${new Date().toISOString().slice(0,10)}.json`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+      setSavedSuccess('📥 Full database backup file downloaded successfully!');
+      setTimeout(() => setSavedSuccess(''), 4000);
+    } catch (e) {
+      alert('Failed to export database backup: ' + e.message);
+    }
+  };
+
   const safeChroniclesList = Array.isArray(chroniclesListState) ? chroniclesListState : [];
   const safeNoticesList = Array.isArray(noticesListState) ? noticesListState : [];
   const safeEventsList = Array.isArray(eventsListState) ? eventsListState : [];
@@ -1704,8 +1723,31 @@ export default function AdminDashboard() {
             </p>
           </div>
 
-          {/* GLOBAL SAVE CONTENTS BUTTON ON TOP RIGHT */}
+          {/* GLOBAL ACTION BUTTONS ON TOP RIGHT */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+            <button 
+              type="button" 
+              onClick={handleExportDatabase}
+              style={{
+                backgroundColor: '#1e293b',
+                color: '#38bdf8',
+                border: '1px solid rgba(56, 189, 248, 0.3)',
+                padding: '10px 18px',
+                borderRadius: '10px',
+                fontSize: '13px',
+                fontWeight: 800,
+                cursor: 'pointer',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '8px',
+                boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+                transition: 'all 0.2s ease'
+              }}
+              title="Download full campus database file (db.json) with all text, notices, events, and images"
+            >
+              <Download size={15} /> Export Backup (db.json)
+            </button>
+
             <button 
               type="button" 
               onClick={saveAllContentsToDatabase}
