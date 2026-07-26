@@ -1,0 +1,21 @@
+{
+  "restorePointName": "RESTORE_POINT_v1.0.0_RNS_CAMPUS_FULL",
+  "createdAt": "2026-07-25T18:39:30+05:45",
+  "version": "1.0.0",
+  "projectName": "Roopnagar Nandaraj Sangraula Campus (RNS Campus)",
+  "featuresCompleted": [
+    "Homepage Notice Marquee & Latest Notice Display",
+    "Campus Chronicles Manager & PDF Attachment Downloader",
+    "Dynamic Excerpts & Dynamic Author Photo Avatar Byline",
+    "Publication Date Removal across Front-end & Admin CMS",
+    "Real-time Auto-Generated URL Slugs for Events & Chronicles",
+    "Campus Events Page & Dedicated Event Details View (/events/:slug)",
+    "IndexedDB Binary Storage Protection for zero-data-loss PDF/Image uploads",
+    "Standardized Navy Banners across all pages (Board of Directors, Chronicles, Events)",
+    "Cleaned up General Settings & PDF Files Tab (Removed duplicate Events table)",
+    "Header Logo resized to 75x75 px with responsive navbar container height",
+    "Vite Dev Server running with 0 compilation errors"
+  ],
+  "backupZipPath": "C:\\Users\\siman\\.gemini\\antigravity\\scratch\\roopnagar-campus-react\\RESTORE_POINT_v1.0.0_RNS_CAMPUS_FULL.zip",
+  "backupFolderPath": "C:\\Users\\siman\\.gemini\antigravity\\scratch\\roopnagar-campus-react\\RESTORE_POINT_v1.0.0_RNS_CAMPUS_FULL"
+}

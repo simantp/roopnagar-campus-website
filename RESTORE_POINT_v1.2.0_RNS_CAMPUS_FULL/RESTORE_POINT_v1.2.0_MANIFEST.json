@@ -1,0 +1,15 @@
+{
+  "version": "1.2.0",
+  "name": "RESTORE_POINT_v1.2.0_RNS_CAMPUS_FULL",
+  "createdAt": "2026-07-26T01:17:12.299Z",
+  "description": "Full restore point with File Database (db.json) persistence, uncropped notice image viewer, 16:9 ratio support, Nepali 2-4 word slugs, reordered Admin tabs, and expanded website load modal.",
+  "features": [
+    "Permanent File Database (src/data/db.json) with GET/POST /api/campus-data API middleware",
+    "Interactive uncropped notice document scan viewer tab with 100% zoom and direct download",
+    "Nepali 2-4 word unique Devanagari slugs for Events and Chronicles",
+    "Reordered Admin CMS tabs with Notice (default) and Event on top with spacing divider",
+    "Expanded Website Load Popup Modal (up to 850px width / 75vh height)",
+    "CKEditor integration for Events, Notices, Chronicles, Vision, Mission & Goals",
+    "Custom confirm delete modal for Admin deletions"
+  ]
+}

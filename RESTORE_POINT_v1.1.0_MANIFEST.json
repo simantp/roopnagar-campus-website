@@ -1,0 +1,19 @@
+{
+  "restorePointName": "RESTORE_POINT_v1.1.0_RNS_CAMPUS_FULL",
+  "createdAt": "2026-07-25T19:36:15+05:45",
+  "version": "1.1.0",
+  "projectName": "Roopnagar Nandaraj Sangraula Campus (RNS Campus)",
+  "featuresCompleted": [
+    "75x75 px Header Logo & Responsive Navbar Height (min-height 85px)",
+    ".rns-banner padding adjusted to 10px 20px across all page headers",
+    "Admin CMS Website Load Popup Modal image upload bugfix (updatePopupModal reference error fixed)",
+    "CKEditor 5 Classic Rich-Text Editor integrated into 4 sections (Events, Notices, Chronicles, About Vision/Mission/Goals)",
+    "Modern Glassmorphic Delete Confirmation Pop-Up Modal (DeleteConfirmModal.jsx) with red icon ring & backdrop blur",
+    "FormattedHtml component & stripHtml textUtils for clean native HTML rendering & Nepali Unicode multiline line break formatting",
+    "Card excerpts automatically stripped of raw HTML tags across Events, Notices, and Chronicles cards",
+    "Prominent White Badge Logo container in Admin Sidebar top-left corner (52x52 px)",
+    "Vite Dev Server running with 0 compilation errors"
+  ],
+  "backupZipPath": "C:\\Users\\siman\\.gemini\\antigravity\\scratch\\roopnagar-campus-react\\RESTORE_POINT_v1.1.0_RNS_CAMPUS_FULL.zip",
+  "backupFolderPath": "C:\\Users\\siman\\.gemini\\antigravity\\scratch\\roopnagar-campus-react\\RESTORE_POINT_v1.1.0_RNS_CAMPUS_FULL"
+}
